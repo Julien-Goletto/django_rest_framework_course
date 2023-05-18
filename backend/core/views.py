@@ -31,5 +31,5 @@ class ContactAPIView(views.APIView):
             else:
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         except:
-            return Response({"result": "error", "message": "Json decoding error"}, status=status.HTTP_4)
+            return Response({"result": "error", "message": "Json decoding error"}, status=status.HTTP_400_BAD_REQUEST)
 
