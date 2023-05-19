@@ -86,7 +86,7 @@ class EcommerceTestCase(APITestCase):
 
     def test_create_order_with_less_than_stock(self):
         '''
-        test OrdersViewSet create method when order.quantity < item.stock
+        test OrdersViewSet create method when order.quantity < item.stock 
         '''
         for i in self.items:
             data = {"item": str(i.id), "quantity": 1}
